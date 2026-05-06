@@ -5,9 +5,9 @@
     "packages/*"
   ],
   "devDependencies": {
-    "husky": "^9.1.7",
-    "lerna": "^9.0.7",
     "@commitlint/cli": "^17.6.1",
+    "husky": "^8.0.3",
+    "lerna": "^6.6.2",
     "markdownlint": "^0.28.1",
     "pnpm": "^8.6.0",
     "rimraf": "^3.0.2",
@@ -27,8 +27,8 @@
     "init": "pnpm install",
     "clean": "lerna clean && rm -rf node_modules",
     "test": "lerna run test",
-    "docs:dev": "vuepress dev doc",
-    "docs:build": "vuepress build doc",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "publish": "lerna publish"
   },

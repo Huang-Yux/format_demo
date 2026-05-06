@@ -5,11 +5,12 @@ set -e
 
 push_addr=`git remote get-url --push origin`
 commit_info=`git describe --all --always --long`
-dist_path=`docs\.vuepress\dist`
-push_branch=gh-pages
+dist_path=docs/.vuepress/dist
+push_branch=format-demo
 
 npm run docs:build # 生成静态资源站点
 
+# 进入生成的文件夹
 cd $dist_path
 
 git init
