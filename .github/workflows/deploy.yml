@@ -28,4 +28,4 @@ jobs:
               with:
                   BRANCH: format-demo
                   FOLDER: docs/.vuepress/dist
-                  ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+                  ACCESS_TOKEN: ${{ secrets.HYX }}
