@@ -26,6 +26,6 @@ jobs:
             - name: Deploy
               uses: JamesIves/github-pages-deploy-action@4.1.3
               with:
-                  BRANCH: format-demo
-                  FOLDER: docs/.vuepress/dist
-                  ACCESS_TOKEN: ${{ secrets.HYX }}
+                  branch: format-demo
+                  folder: docs/.vuepress/dist
+                  token: ${{ secrets.HYX }}
