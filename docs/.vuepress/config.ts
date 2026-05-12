@@ -8,7 +8,7 @@ export default defineConfig4CustomTheme({
       description: '前端编码规范工程化',
     },
   },
-  base: '/fe-spec/',
+  base: '/format_demo/',
   themeConfig: {
     nav: [
       { text: '首页', link: '/index.md' },
@@ -104,13 +104,13 @@ export default defineConfig4CustomTheme({
       },
     ],
     logo: '/img/logo.png',
-    repo: 'encode-studio-fe/fe-spec',
+    repo: 'encode-studio-fe/format_demo',
     searchMaxSuggestions: 10,
     docsDir: 'docs',
     footer: {
       createYear: 2023,
       copyrightInfo:
-        'encode studio | <a href="https://github.com/encode-studio-fe/fe-spec" target="_blank">github</a>',
+        'encode studio | <a href="https://github.com/encode-studio-fe/format_demo" target="_blank">github</a>',
     },
 
     extendFrontmatter: {
