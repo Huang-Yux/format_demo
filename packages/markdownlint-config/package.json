@@ -1,5 +1,5 @@
 {
-  "name": "@format-demo/markdownlint-config",
+  "name": "format-demo-markdownlint-config",
   "version": "1.0.0",
   "main": "index.json",
   "description": "文档规范",
@@ -22,3 +22,4 @@
     "markdownlint": "^0.28.1"
   }
 }
+

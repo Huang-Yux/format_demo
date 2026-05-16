@@ -1,5 +1,5 @@
 ---
-title: @format-demo/stylelint-config
+title: format-demo-stylelint-config
 categories:
   - 工程规范
 tags:
@@ -9,7 +9,7 @@ author:
   link: https://github.com/encode-studio-fe/format_demo
 ---
 
-# @format-demo/stylelint-config
+# format-demo-stylelint-config
 
 :::tip
 印客学院 CSS 规范
@@ -22,7 +22,7 @@ author:
 需要先行安装 [stylelint](https://www.npmjs.com/package/stylelint) 和 [stylelint-scss](https://www.npmjs.com/package/stylelint-scss)：
 
 ```bash
-npm install @format-demo/stylelint-config stylelint stylelint-scss --save-dev
+npm install format-demo-stylelint-config stylelint stylelint-scss --save-dev
 ```
 
 ## 使用
@@ -31,6 +31,7 @@ npm install @format-demo/stylelint-config stylelint stylelint-scss --save-dev
 
 ```json
 {
-  "extends": "@format-demo/stylelint-config"
+  "extends": "format-demo-stylelint-config"
 }
 ```
+

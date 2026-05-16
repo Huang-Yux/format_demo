@@ -1,5 +1,5 @@
 ---
-title: @format-demo/commitlint-config
+title: format-demo-commitlint-config
 categories:
   - 工程规范
 tags:
@@ -9,7 +9,7 @@ author:
   link: https://github.com/encode-studio-fe/format_demo
 ---
 
-# @format-demo/commitlint-config
+# format-demo-commitlint-config
 
 :::tip
 印客学院 Git 规范
@@ -22,7 +22,7 @@ author:
 使用时，需要安装 [@commitlint/cli](https://www.npmjs.com/package/@commitlint/cli)：
 
 ```bash
-npm install @format-demo/commitlint-config @commitlint/cli --save-dev
+npm install format-demo-commitlint-config @commitlint/cli --save-dev
 ```
 
 ## 使用
@@ -31,7 +31,7 @@ npm install @format-demo/commitlint-config @commitlint/cli --save-dev
 
 ```javascript
 module.exports = {
-  extends: ['@format-demo/commitlint-config'],
+  extends: ['format-demo-commitlint-config'],
 };
 ```
 

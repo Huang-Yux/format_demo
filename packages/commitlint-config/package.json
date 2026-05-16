@@ -1,5 +1,5 @@
 {
-  "name": "@format-demo/commitlint-config",
+  "name": "format-demo-commitlint-config",
   "version": "1.0.0",
   "main": "index.js",
   "description": "Git规范",
@@ -22,3 +22,4 @@
     "conventional-changelog-conventionalcommits": "^4.5.0"
   }
 }
+

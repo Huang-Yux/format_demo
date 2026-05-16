@@ -1,5 +1,5 @@
 ---
-title: encode-fe-eslint-plugin
+title: format-demo-eslint-plugin
 categories:
   - 工程规范
 tags:
@@ -9,12 +9,12 @@ author:
   link: https://github.com/encode-studio-fe/format_demo
 ---
 
-# encode-fe-eslint-plugin
+# format-demo-eslint-plugin
 
 除了本包，你需要同时安装 [ESlint](https://eslint.org/)
 
 ```shell
-$ npm install encode-fe-eslint-plugin eslint --save-dev
+$ npm install format-demo-eslint-plugin eslint --save-dev
 ```
 
 ## 使用
@@ -24,9 +24,9 @@ $ npm install encode-fe-eslint-plugin eslint --save-dev
 ```js
 // .eslintrc.js
 module.exports = {
-  plugin: ['@format-demo/eslint-config'],
+  plugin: ['format-demo-eslint-config'],
   rules: {
-    'encode-fe-eslint-plugin/no-secret-info': 'error',
+    'format-demo-eslint-plugin/no-secret-info': 'error',
   },
 };
 ```
@@ -36,7 +36,7 @@ module.exports = {
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: 'plugin:encode-fe-eslint-plugin/recommended',
+  extends: 'plugin:format-demo-eslint-plugin/recommended',
 };
 ```
 
