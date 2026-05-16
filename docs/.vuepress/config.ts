@@ -33,13 +33,13 @@ export default defineConfig4CustomTheme({
       {
         text: 'NPM包',
         items: [
-          { text: 'encode-fe-eslint-config', link: '/npm/eslint.md' },
-          { text: 'encode-fe-stylelint-config', link: '/npm/stylelint.md' },
-          { text: 'encode-fe-commitlint-config', link: '/npm/commitlint.md' },
-          { text: 'encode-fe-markdownlint-config', link: '/npm/markdownlint.md' },
+          { text: '@format-demo/eslint-config', link: '/npm/eslint.md' },
+          { text: '@format-demo/stylelint-config', link: '/npm/stylelint.md' },
+          { text: '@format-demo/commitlint-config', link: '/npm/commitlint.md' },
+          { text: '@format-demo/markdownlint-config', link: '/npm/markdownlint.md' },
           { text: 'encode-fe-eslint-plugin', link: '/npm/eslint-plugin.md' },
         ],
-      },
+      }
       {
         text: '脚手架',
         items: [{ text: 'encode-fe-lint', link: '/cli/encode-fe-lint.md' }],
@@ -91,13 +91,13 @@ export default defineConfig4CustomTheme({
       {
         title: 'NPM包',
         children: [
-          { title: 'encode-fe-eslint-config', path: '/npm/eslint.md' },
-          { title: 'encode-fe-stylelint-config', path: '/npm/stylelint.md' },
-          { title: 'encode-fe-commitlint-config', path: '/npm/commitlint.md' },
-          { title: 'encode-fe-markdownlint-config', path: '/npm/markdownlint.md' },
+          { title: '@format-demo/eslint-config', path: '/npm/eslint.md' },
+          { title: '@format-demo/stylelint-config', path: '/npm/stylelint.md' },
+          { title: '@format-demo/commitlint-config', path: '/npm/commitlint.md' },
+          { title: '@format-demo/markdownlint-config', path: '/npm/markdownlint.md' },
           { title: 'encode-fe-eslint-plugin', path: '/npm/eslint-plugin.md' },
         ],
-      },
+      }
       {
         title: '脚手架',
         children: [{ title: 'encode-fe-lint', path: '/cli/encode-fe-lint.md' }],

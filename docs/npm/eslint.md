@@ -1,5 +1,5 @@
 ---
-title: encode-fe-eslint-config
+title: @format-demo/eslint-config
 categories:
   - 工程规范
 tags:
@@ -9,7 +9,7 @@ author:
   link: https://github.com/encode-studio-fe/format_demo
 ---
 
-# encode-fe-eslint-config
+# @format-demo/eslint-config
 
 :::tip
 印客学院 JavaScript TypeScript Node 规范
@@ -30,14 +30,14 @@ author:
 ### 安装
 
 ```shell
-npm i -D encode-fe-eslint-config @babel/core @babel/eslint-parser eslint-plugin-import
+npm i -D @format-demo/eslint-config @babel/core @babel/eslint-parser eslint-plugin-import
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["encode-fe-eslint-config"]
+  "extends": ["@format-demo/eslint-config"]
 }
 ```
 
@@ -57,14 +57,14 @@ npm i -D encode-fe-eslint-config @babel/core @babel/eslint-parser eslint-plugin-
 ### 安装
 
 ```shell
-npm i -D encode-fe-eslint-config @babel/core @babel/eslint-parser eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks
+npm i -D @format-demo/eslint-config @babel/core @babel/eslint-parser eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["encode-fe-eslint-config/react"]
+  "extends": ["@format-demo/eslint-config/react"]
 }
 ```
 
@@ -95,14 +95,14 @@ npm i -D eslint-plugin-jsx-a11y
 ### 安装
 
 ```shell
-npm i -D encode-fe-eslint-config @babel/core @babel/eslint-parser eslint-plugin-import vue-eslint-parser eslint-plugin-vue
+npm i -D @format-demo/eslint-config @babel/core @babel/eslint-parser eslint-plugin-import vue-eslint-parser eslint-plugin-vue
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["encode-fe-eslint-config/vue"]
+  "extends": ["@format-demo/eslint-config/vue"]
 }
 ```
 
@@ -120,14 +120,14 @@ npm i -D encode-fe-eslint-config @babel/core @babel/eslint-parser eslint-plugin-
 ### 安装
 
 ```shell
-npm i -D encode-fe-eslint-config @babel/core @babel/eslint-parser eslint-plugin-import eslint-config-egg
+npm i -D @format-demo/eslint-config @babel/core @babel/eslint-parser eslint-plugin-import eslint-config-egg
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["encode-fe-eslint-config/node"]
+  "extends": ["@format-demo/eslint-config/node"]
 }
 ```
 
@@ -145,14 +145,14 @@ npm i -D encode-fe-eslint-config @babel/core @babel/eslint-parser eslint-plugin-
 ### 安装
 
 ```shell
-npm i -D encode-fe-eslint-config @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript
+npm i -D @format-demo/eslint-config @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["encode-fe-eslint-config/typescript"]
+  "extends": ["@format-demo/eslint-config/typescript"]
 }
 ```
 
@@ -184,14 +184,14 @@ npm i -D encode-fe-eslint-config @typescript-eslint/parser @typescript-eslint/es
 ### 安装
 
 ```
-npm i -D encode-fe-eslint-config @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript eslint-plugin-react eslint-plugin-react-hooks
+npm i -D @format-demo/eslint-config @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["encode-fe-eslint-config/typescript/react"]
+  "extends": ["@format-demo/eslint-config/typescript/react"]
 }
 ```
 
@@ -203,7 +203,7 @@ npm i -D  eslint-plugin-jsx-a11y
 
 ```json
 {
-  "extends": ["encode-fe-eslint-config/typescript/react", "encode-fe-eslint-config/jsx-a11y"]
+  "extends": ["@format-demo/eslint-config/typescript/react", "@format-demo/eslint-config/jsx-a11y"]
 }
 ```
 
@@ -223,14 +223,14 @@ npm i -D  eslint-plugin-jsx-a11y
 ### 安装
 
 ```shell
-npm i -D encode-fe-eslint-config @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript vue-eslint-parser eslint-plugin-vue
+npm i -D @format-demo/eslint-config @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript vue-eslint-parser eslint-plugin-vue
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["encode-fe-eslint-config/typescript/vue"]
+  "extends": ["@format-demo/eslint-config/typescript/vue"]
 }
 ```
 
@@ -249,14 +249,14 @@ npm i -D encode-fe-eslint-config @typescript-eslint/parser @typescript-eslint/es
 ### 安装
 
 ```
-npm i -D encode-fe-eslint-config @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript eslint-config-egg
+npm i -D @format-demo/eslint-config @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript eslint-config-egg
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["encode-fe-eslint-config/typescript/node"]
+  "extends": ["@format-demo/eslint-config/typescript/node"]
 }
 ```
 

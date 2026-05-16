@@ -24,7 +24,7 @@ $ npm install encode-fe-eslint-plugin eslint --save-dev
 ```js
 // .eslintrc.js
 module.exports = {
-  plugin: ['encode-fe-eslint-config'],
+  plugin: ['@format-demo/eslint-config'],
   rules: {
     'encode-fe-eslint-plugin/no-secret-info': 'error',
   },

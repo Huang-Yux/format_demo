@@ -1,5 +1,5 @@
 {
-  "name": "eslint-demo",
+  "name": "@format-demo/eslint-config",
   "version": "1.0.0",
   "main": "index.js",
   "description": "JavaScript TypeScript Node 规范",
