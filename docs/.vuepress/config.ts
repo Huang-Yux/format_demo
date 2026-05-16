@@ -39,7 +39,7 @@ export default defineConfig4CustomTheme({
           { text: '@format-demo/markdownlint-config', link: '/npm/markdownlint.md' },
           { text: 'encode-fe-eslint-plugin', link: '/npm/eslint-plugin.md' },
         ],
-      }
+      },
       {
         text: '脚手架',
         items: [{ text: 'encode-fe-lint', link: '/cli/encode-fe-lint.md' }],
@@ -97,7 +97,7 @@ export default defineConfig4CustomTheme({
           { title: '@format-demo/markdownlint-config', path: '/npm/markdownlint.md' },
           { title: 'encode-fe-eslint-plugin', path: '/npm/eslint-plugin.md' },
         ],
-      }
+      },
       {
         title: '脚手架',
         children: [{ title: 'encode-fe-lint', path: '/cli/encode-fe-lint.md' }],
