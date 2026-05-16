@@ -28,4 +28,4 @@ jobs:
               with:
                   branch: format-demo
                   folder: docs/.vuepress/dist
-                  token: ${{ secrets.HYX }}
+                  token: ${{ secrets.GITHUB_TOKEN }}
