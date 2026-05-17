@@ -115,8 +115,8 @@ export default defineConfig4CustomTheme({
 
     extendFrontmatter: {
       author: {
-        name: '澄怀',
-        link: 'https://github.com/encode-studio-fe/fe-sepc',
+        name: 'HYX',
+        link: 'https://github.com/Huang-Yux/format_demo',
       },
     },
   },
