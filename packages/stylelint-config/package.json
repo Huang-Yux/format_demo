@@ -1,7 +1,7 @@
 {
   "name": "format-demo-stylelint-config",
   "version": "1.0.1",
-  "description": "印客学院 CSS规范",
+  "description": "CSS规范",
   "main": "index.js",
   "keywords": [
     "encode",

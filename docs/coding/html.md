@@ -337,10 +337,10 @@ author:
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="印客学院 - 一千个职业梦想的赞助商" />
-    <meta name="keyword" content="印客学院" />
+    <meta name="description" content="一千个职业梦想的赞助商" />
+    <meta name="keyword" content="HYX" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, viewport-fit=cover" />
-    <title>印客学院</title>
+    <title>HYX</title>
     <link rel="stylesheet" href="example.css" />
   </head>
   <body>
