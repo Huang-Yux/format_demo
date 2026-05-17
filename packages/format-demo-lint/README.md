@@ -1,23 +1,12 @@
----
-title: format-demo-lint 
-categories:
-  - 脚手架规范
-tags:
-  - 脚手架规范
-author:
-  name: hyx
-  link: https://github.com/Huang-Yux/format_demo
----
-
 # format-demo-lint
 
-`format-demo-lint` 是[印客学院 前端编码规范工程化](https://encode-studio-fe.github.io/format_demo/)的配置Lint 工具，可以为项目一键接入规范、一键扫描和修复规范问题，保障项目的编码规范和代码质量。
+`format-demo-lint` 是[前端编码规范工程化](https://github.com/Huang-Yux/format_demo)的配套 Lint 工具，可以为项目一键接入规范、一键扫描和修复规范问题，保障项目的编码规范和代码质量。
 
 ## 背景
 
 我们引入了多个业界流行的 Linter，并根据规范内容定制了规则包，它们包括：
 
-| 规范                                                              | Lint 工具                                                  | npm 包                                                                                      |
+| 规范                                                              | Lint 工具                                                  | npm 包                                                                                       |
 | ----------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                              | [format-demo-eslint-config](https://www.npmjs.com/package/format-demo-eslint-config)             |
 | CSS 编码规范                                                      | [stylelint](https://stylelint.io/)                         | [format-demo-stylelint-config](https://www.npmjs.com/package/format-demo-stylelint-config)       |
@@ -26,7 +15,7 @@ author:
 
 可以看到这些 `Linter` 和规则包众多且零散，全部安装它们会给项目增加十几个依赖，接入和升级成本都比较高。
 
-`format-demo-lint` 收敛屏蔽了这些依赖和配置细节，提供简单的 CLI 和Node.js API，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规范的成本。
+`format-demo-lint` 收敛屏蔽了这些依赖和配置细节，提供简单的 CLI 和 Node.js API，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规范的成本。
 
 ## CLI 使用
 
@@ -38,32 +27,32 @@ author:
 npm install format-demo-lint -g
 ```
 
-安装完成后，可执�?`format-demo-lint -h` 以验证安装成功。
+安装完成后，可执行 `format-demo-lint -h` 以验证安装成功。
 
 ### 使用
 
-#### `format-demo-lint init`：一键接�?
+#### `format-demo-lint init`：一键接入
 
-在项目根目录执行 `format-demo-lint init`，即可一键接入规范，为项目安装规范`Lint` 所需的依赖和配置。
+在项目根目录执行 `format-demo-lint init`，即可一键接入规范，为项目安装规范 `Lint` 所需的依赖和配置。
 
 具体会做以下事情：
 
-- 安装各种依赖：包括`Linter` 依赖，如 [ESLint](https://eslint.org/)、[stylelint](https://stylelint.io/)、[commitlint](https://commitlint.js.org/#/)、[markdownlint](https://github.com/DavidAnson/markdownlint) 等；配置依赖，如 [format-demo-eslint-config](https://www.npmjs.com/package/format-demo-eslint-config)、[format-demo-stylelint-config](https://www.npmjs.com/package/format-demo-stylelint-config)、[format-demo-commitlint-config](https://www.npmjs.com/package/format-demo-commitlint-config)、[format-demo-markdownlint-config](https://www.npmjs.com/package/format-demo-markdownlint-config) 等
+- 安装各种依赖：包括 `Linter` 依赖，如 [ESLint](https://eslint.org/)、[stylelint](https://stylelint.io/)、[commitlint](https://commitlint.js.org/#/)、[markdownlint](https://github.com/DavidAnson/markdownlint) 等；配置依赖，如 [format-demo-eslint-config](https://www.npmjs.com/package/format-demo-eslint-config)、[format-demo-stylelint-config](https://www.npmjs.com/package/format-demo-stylelint-config)、[format-demo-commitlint-config](https://www.npmjs.com/package/format-demo-commitlint-config)、[format-demo-markdownlint-config](https://www.npmjs.com/package/format-demo-markdownlint-config) 等
 - 写入各种配置文件，包括：
-  - `.eslintrc.js`、`.eslintignore`：ESLint 配置（继承`format-demo-eslint-config`）及黑名单文件
-  - `.stylelintrc.js`、`.stylelintignore`：stylelint 配置（继承`format-demo-stylelint-config`）及黑名单文件
-  - `commitlint.config.js`：commitlint 配置（继承`format-demo-commitlint-config`）
+  - `.eslintrc.js`、`.eslintignore`：ESLint 配置（继承 `format-demo-eslint-config`）及黑名单文件
+  - `.stylelintrc.js`、`.stylelintignore`：stylelint 配置（继承 `format-demo-stylelint-config`）及黑名单文件
+  - `commitlint.config.js`：commitlint 配置（继承 `format-demo-commitlint-config`）
   - `.markdownlint.json`、`.markdownlintignore`：`markdownlint` 配置及黑名单文件
   - `.prettierrc.js`：符合规范的 [Prettier 配置](https://prettier.io/docs/en/configuration.html)
   - `.editorconfig`：符合规范的 [editorconfig](https://editorconfig.org/)
-  - `.vscode/extensions.json`：写入规范相关的 [VSCode 插件推荐](https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions)，包括`ESLint`、`stylelint`、`markdownlint`、`prettier` 等
-  - `.vscode/settings.json`：写入规范相关的 [VSCode 设置](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations)，设置`ESLint` 和`stylelint` 插件的`validate`及**保存时自动运行fix**，如果选择使用 `Prettier`，会同时将`prettier-vscode` 插件设置为各前端语言的defaultFormatter，并配置**保存时自动格式化**
+  - `.vscode/extensions.json`：写入规范相关的 [VSCode 插件推荐](https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions)，包括 `ESLint`、`stylelint`、`markdownlint`、`prettier` 等
+  - `.vscode/settings.json`：写入规范相关的 [VSCode 设置](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations)，设置 `ESLint` 和 `stylelint` 插件的 `validate` 及**保存时自动运行 fix**，如果选择使用 `Prettier`，会同时将 `prettier-vscode` 插件设置为各前端语言的 defaultFormatter，并配置**保存时自动格式化**
   - `format-demo-lint.config.js`format-demo-lint 包的一些配置，如启用的功能等
-- 配置 git commit 卡口：使用[husky](https://www.npmjs.com/package/husky) 设置代码提交卡口，在 git commit 时会运行 `format-demo-lint commit-file-scan` 和`format-demo-lint commit-msg-scan` 分别对提交文件和提交信息进行规范检查。`format-demo-lint commit-file-scan` 默认仅对 error 问题卡口，如果你想对 warn 问题也卡口，可以增加 `--strict` 参数以开启严格模式
+- 配置 git commit 卡口：使用 [husky](https://www.npmjs.com/package/husky) 设置代码提交卡口，在 git commit 时会运行 `format-demo-lint commit-file-scan` 和 `format-demo-lint commit-msg-scan` 分别对提交文件和提交信息进行规范检查。`format-demo-lint commit-file-scan` 默认仅对 error 问题卡口，如果你想对 warn 问题也卡口，可以增加 `--strict` 参数以开启严格模式
 
-> 注 1：如果项目已经配置过 ESLint、stylelint 等 Linter，执行`format-demo-lint init` 将会提示存在冲突的依赖和配置，并在得到确认后进行覆盖：
+> 注 1：如果项目已经配置过 ESLint、stylelint 等 Linter，执行 `format-demo-lint init` 将会提示存在冲突的依赖和配置，并在得到确认后进行覆盖：
 >
-> 注2：如果项目的 .vscode/ 目录被.gitignore 忽略，可以在拉取项目后单独执行`format-demo-lint init --vscode` 命令写入 `.vscode/extensions.json` 和`.vscode/settings.json` 配置文件
+> 注 2：如果项目的 .vscode/ 目录被 .gitignore 忽略，可以在拉取项目后单独执行 `format-demo-lint init --vscode` 命令写入 `.vscode/extensions.json` 和 `.vscode/settings.json` 配置文件
 
 #### `format-demo-lint scan`：一键扫描
 
@@ -76,9 +65,9 @@ npm install format-demo-lint -g
 - `-i` `--include <dirpath>` 指定要进行规范扫描的目录
 - `--no-ignore` 忽略 eslint 的 ignore 配置文件和 ignore 规则
 
-> 注 1：事实上，你可以在任意目录执行`format-demo-lint scan` `format-demo-lint` 会根据文件类型、JSON 等特征嗅探项目类型。但我们还是推荐在执行过 `format-demo-lint init` 的项目根目录执行 `format-demo-lint scan`，以得到最准确的扫描结果。
+> 注 1：事实上，你可以在任意目录执行 `format-demo-lint scan` `format-demo-lint` 会根据文件类型、JSON 等特征嗅探项目类型。但我们还是推荐在执行过 `format-demo-lint init` 的项目根目录执行 `format-demo-lint scan`，以得到最准确的扫描结果。
 >
-> 注 2: `format-demo-lint` 会根据项目内有无 eslint 和 stylelint 配置文件判断使用项目的配置文件还是`format-demo-lint` 默认配置进行扫描。若使用项目的，在未安装依赖时会帮其安装（执行npm i）。若使用项目配置扫描失败，则使用默认配置扫描
+> 注 2: `format-demo-lint` 会根据项目内有无 eslint 和 stylelint 配置文件判断使用项目的配置文件还是 `format-demo-lint` 默认配置进行扫描。若使用项目的，在未安装依赖时会帮其安装（执行 npm i）。若使用项目配置扫描失败，则使用默认配置扫描
 
 #### `format-demo-lint fix`：一键修复
 
@@ -87,9 +76,9 @@ npm install format-demo-lint -g
 支持下列参数：
 
 - `-i` `--include <dirpath>` 指定要进行修复扫描的目录
-- `--no-ignore` 忽略 eslint 的ignore 配置文件和 ignore 规则
+- `--no-ignore` 忽略 eslint 的 ignore 配置文件和 ignore 规则
 
-注意请review 下修复前后的代码，以免工具误修的情况。
+注意请 review 下修复前后的代码，以免工具误修的情况。
 
 #### `format-demo-lint commit-file-scan` 提交文件扫描
 
@@ -115,7 +104,7 @@ npm install format-demo-lint --save
 
 #### init：初始化
 
-- format-demo-lint.init(config)：将项目一键接入规范，效果等同于`format-demo-lint init`
+- format-demo-lint.init(config)：将项目一键接入规范，效果等同于 `format-demo-lint init`
 
 示例：
 
@@ -134,13 +123,13 @@ npm install format-demo-lint --save
 
 config 参数如下：
 
-| 参数               | 类型       | 默认值| 说明                                                                                                                |
+| 参数               | 类型       | 默认值 | 说明                                                                                                                |
 | ------------------ | ---------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
 | cwd                | string     | -      | 项目绝对路径                                                                                                        |
-| eslintType         | ESLintType | -      | 语言和框架类型，如果不配置，等同于 format-demo-lint init，控制台会出现选择器，如果配置，控制台就不会出现选择器      |
+| eslintType         | ESLintType | -      | 语言和框架类型，如果不配置，等同于 format-demo-lint init，控制台会出现选择器，如果配置，控制台就不会出现选择器        |
 | enableESLint       | boolean    | true   | 是否启用 ESLint，如果不配置默认值为 true，即默认启用 ESLint                                                         |
-| enableStylelint    | boolean    | -      | 是否启用 stylelint，如果不配置，等同于 format-demo-lint init，控制台会出现选择器，如果配置，控制台就不会出现选择器 |
-| enableMarkdownlint | boolean    | -      | 是否启用 markdownlint，如果不配置，等同于 format-demo-lint init，控制台会出现选择器，如果配置，控制台就不会出现选择器|
+| enableStylelint    | boolean    | -      | 是否启用 stylelint，如果不配置，等同于 format-demo-lint init，控制台会出现选择器，如果配置，控制台就不会出现选择器    |
+| enableMarkdownlint | boolean    | -      | 是否启用 markdownlint，如果不配置，等同于 format-demo-lint init，控制台会出现选择器，如果配置，控制台就不会出现选择器 |
 | enablePrettier     | boolean    | -      | 是否启用 Prettier                                                                                                   |
 | disableNpmInstall  | boolean    | false  | 是否禁用自动在初始化完成后安装依赖                                                                                  |
 
