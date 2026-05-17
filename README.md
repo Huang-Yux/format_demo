@@ -1,4 +1,0 @@
-# token
-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
-
-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
