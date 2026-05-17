@@ -1,2 +1,4 @@
 # token
-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
+gitToken: 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
+
+npmToken: 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
