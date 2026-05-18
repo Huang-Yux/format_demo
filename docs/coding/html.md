@@ -5,8 +5,8 @@ categories:
 tags:
   - 编码规范
 author:
-  name: 澄怀
-  link: https://github.com/encode-studio-fe/format_demo
+  name: 黄宇轩
+  link: https://github.com/Huang-Yux/format_demo
 ---
 
 # HTML 编码规范
@@ -159,7 +159,7 @@ author:
   ```html
   <head>
     <meta charset="utf-8" />
-    <title>印客学院</title>
+    <title>前端编码规范工程化</title>
   </head>
   ```
 
@@ -173,7 +173,7 @@ author:
   <!DOCTYPE html>
   <html>
     <head>
-      <title>印客学院</title>
+      <title>前端编码规范工程化</title>
     </head>
     <body>
       <img src="images/company-logo.png" alt="Company" />

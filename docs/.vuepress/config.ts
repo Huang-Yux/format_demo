@@ -4,7 +4,7 @@ export default defineConfig4CustomTheme({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: '印客学院',
+      title: '前端编码规范工程化',
       description: '前端编码规范工程化',
     },
   },
@@ -104,13 +104,13 @@ export default defineConfig4CustomTheme({
       },
     ],
     logo: '/img/logo.png',
-    repo: 'encode-studio-fe/format_demo',
+    repo: '/format_demo',
     searchMaxSuggestions: 10,
     docsDir: 'docs',
     footer: {
       createYear: 2023,
       copyrightInfo:
-        'encode studio | <a href="https://github.com/encode-studio-fe/format_demo" target="_blank">github</a>',
+        'encode studio | <a href="https://github.com/Huang-Yux/format_demo" target="_blank">github</a>',
     },
 
     extendFrontmatter: {

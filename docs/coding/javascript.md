@@ -5,8 +5,8 @@ categories:
 tags:
   - 编码规范
 author:
-  name: 澄怀
-  link: https://github.com/encode-studio-fe/format_demo
+  name: 黄宇轩
+  link: https://github.com/Huang-Yux/format_demo
 ---
 
 # JavaScript 编码规范

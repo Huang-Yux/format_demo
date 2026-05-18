@@ -52,11 +52,3 @@ features:
 
 </br>
 
-## :email: 联系
-
-- **印客学院官网**: <http://encodestudio.cn>
-- **GitHub**: <https://github.com/encode-studio-fe/format_demo>
-
-</br>
-
-
