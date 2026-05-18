@@ -4,7 +4,6 @@
   "main": "index.js",
   "description": "Git规范",
   "keywords": [
-    "encode",
     "commit",
     "lint"
   ],

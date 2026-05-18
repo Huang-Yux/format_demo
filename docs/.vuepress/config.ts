@@ -110,7 +110,7 @@ export default defineConfig4CustomTheme({
     footer: {
       createYear: 2023,
       copyrightInfo:
-        'encode studio | <a href="https://github.com/Huang-Yux/format_demo" target="_blank">github</a>',
+        '<a href="https://github.com/Huang-Yux/format_demo" target="_blank">github</a>',
     },
 
     extendFrontmatter: {

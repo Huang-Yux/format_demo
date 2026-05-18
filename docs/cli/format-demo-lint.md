@@ -38,11 +38,11 @@ author:
 npm install format-demo-lint -g
 ```
 
-安装完成后，可执�?`format-demo-lint -h` 以验证安装成功。
+安装完成后，可执行 `format-demo-lint -h` 以验证安装成功。
 
 ### 使用
 
-#### `format-demo-lint init`：一键接�?
+#### `format-demo-lint init`：一键接入
 
 在项目根目录执行 `format-demo-lint init`，即可一键接入规范，为项目安装规范`Lint` 所需的依赖和配置。
 
